@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div id="btnModeSwitcher" onclick="changeMode()">
+        <p>Dark Mode</p>
+    </div>
+    <div id="clockRightToLeft">
+        <div class="clocknum">
+            <p>9</p>
+        </div>
+        <div id="clockBottomToTop">
+            <div id="numTop" class="clocknum">
+                <p>12</p>
+            </div>
+            <div id="mainDivClock">
+                <div class="clockCenter" id="clockMinute">
+                    <div  class="pointer"></div>
+                </div>
+                <div class="clockCenter" id="clockSeconds">
+                    <div class="pointer" id="secondPointer"></div>
+        
+                </div>
+                <div class="clockCenter" id="clockHour">
+                    <div class="pointer"></div>
+                </div>
+            </div>
+            <div class="clocknum">
+                <p>6</p>
+            </div>
+        </div>
+
+        <div class="clocknum">
+            <p>3</p>
+        </div>
+    </div>
+    <div id="backgroundColorTransition" class="closed"></div>
+
+    <script src="clock.js"></script>
+</body>
+</html>

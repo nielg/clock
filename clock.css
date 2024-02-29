@@ -1,0 +1,100 @@
+.darkMode{
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
+.clocknum{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px; 
+   height: 50px;
+   font-family: 'Georgia', serif;
+   font-size: 30px;
+   margin: 0;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100Vh;
+    overflow: hidden;
+}
+#clockBottomToTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#clockRightToLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 800px;
+    width: 450px;
+    height: 450px;
+    margin: 20px;
+}
+#mainDivClock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    margin: 160px;
+}
+.pointer{
+    position: absolute;
+    border: 1px solid black;
+    width: 150px;
+    margin: 10px;
+}
+.clockCenter{
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+#clockSeconds .pointer {
+    border-color: red;
+    width: 170px;
+}
+#clockHour .pointer{
+    width: 100px;
+}
+#btnModeSwitcher{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+#btnModeSwitcher p{
+    margin: 0;
+}
+
+#backgroundColorTransition{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    border-radius: 1000px 1000px 0 0;
+    transition: width 1s, height 1s;
+    z-index: -1;
+}
+.closed{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.open{
+    width: 150vw;
+    height: 150vh;
+    visibility: visible;
+}
